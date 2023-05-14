@@ -1,204 +1,165 @@
-  @import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Montserrat:wght@100&family=Outfit:wght@300&display=swap');
-
-* {
-    margin: 0;
-    padding: 0;
-    font-family: 'Outfit', sans-serif;
-    display: block;
-    
+title {
+  display: none;
 }
 
-title {
-    display: none;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: block;
+  font-family: "Outfit", sans-serif;
 }
 
 body {
-    
-    background-color: rgb(190, 190, 147);
-    
+  background-color: rgb(190, 190, 147);
 }
 
-.logo {
-    margin: 10px;
-    height: 40px;
-    width: 40px;
-   
+header .navbar {
+  background-color: #712cf9;
+}
+header .navbar .container-fluid .navbar-brand .logo {
+  margin: 10px;
+  height: 40px;
+  width: 40px;
+}
+header .navbar .container-fluid .collapse .navbar-nav .nav-item .nav-link {
+  color: rgba(255, 255, 255, 0.85);
 }
 
-.navbar {
-    background-color: #712cf9;
-    
+main h1 {
+  margin: 30px 0px 0px 0px;
+  padding: 10px;
+  background-color: #3a0a99;
+  color: white;
+  text-align: center;
 }
-
-.nav-link {
-    color: rgba(255,255,255,0.85);;
+main .texto-noticia {
+  text-align: center;
+  border: 1px solid black;
 }
-
-.texto-noticia {
-    text-align: center;
+main .texto-noticia h2 {
+  margin: 50px 0px 30px 30px;
+  padding: 15px;
+  background-color: #3a0a99;
+  display: inline-block;
+  color: white;
 }
-
-h1 {
-    margin: 30px 0px 0px 0px;
-    padding: 10px;
-    background-color:#3a0a99;
-    color: white;
-    text-align: center;
+main .texto-noticia h3 {
+  color: white;
+  margin: 20px;
 }
-
-h2 {
-    margin: 50px 0px 30px 30px;
-    padding: 15px;
-    background-color: #3a0a99;
-    display: inline-block;
-    color: white;
+main .texto-noticia .imagen-noticia, main .texto-noticia .imagen-noticia2 {
+  width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
-
-h3 {
-    color: white;
-    margin: 20px;
-    
-    
-}
-
-
-.imagen-noticia {
-    width: 50%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-p {
-    margin-top: 15px;
-    width: 50%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    color: white;
-    font-size: 20px;
-    
+main .texto-noticia p {
+  margin-top: 15px;
+  width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+  font-size: 20px;
 }
 
 footer {
-    background-color: #3a0a99;
-    
+  background-color: #3a0a99;
 }
-    
-ul {
-    margin-bottom: 0;
+footer .redes {
+  text-align: center;
+  margin-bottom: 0;
 }
-
-.redes {
-    text-align: center;
-
+footer .redes li {
+  display: inline-block;
 }
-
-.redes li {
-    display: inline-block;
+footer .redes li a .facebook {
+  height: 42px;
+  margin: 10px;
 }
-
-.facebook {
-    height: 42px;
-    margin: 10px;
-    
+footer .redes li a .instagram {
+  height: 35px;
+  margin: 10px;
 }
 
-.instagram {
-    height: 35px;
-    margin: 10px;
-    
+section .h3-galeria {
+  text-align: center;
+  margin: 20px 100px;
+  background-color: #3a0a99;
+  height: 100%;
+}
+section .container-galeria {
+  min-height: 550px;
+  margin: 15px 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 10px;
+}
+section .container-galeria .container-galeria img {
+  height: 200px;
+  width: 250px;
+  border: 1px solid black;
+  margin-bottom: 10px;
+}
+section .container-galeria2 {
+  display: grid;
+  justify-content: center;
+  grid-template-rows: repeat(3, 150px);
+  grid-template-columns: repeat(3, 200px);
+  margin-bottom: 20px;
+}
+section .container-galeria2 img {
+  height: 100%;
+  width: 100%;
+  transition: all 2s;
+}
+section .container-galeria2 img:hover {
+  transform: scale(0.5);
+}
+section .container-galeria2 .img-1 {
+  grid-column: 1/3;
+}
+section .container-galeria2 .img-2 {
+  grid-row: 2/4;
+}
+section .container-galeria2 .img-4 {
+  grid-column: 2/4;
+}
+section .container-galeria2 .img-5 {
+  grid-column: 2/4;
 }
 
-
-.h3-galeria {
-    text-align: center;
-    margin: 20px 100px;
-    background-color: #3a0a99;
-    height: 100%;
+main .container-fluid .formulario form {
+  text-align: center;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+}
+main .container-fluid .formulario form input {
+  margin: auto;
+}
+main .container-fluid .formulario form label {
+  margin: auto;
+}
+main .container-fluid .formulario form textarea {
+  margin: auto;
+}
+main .container-fluid .formulario form button {
+  background-color: #3a0a99;
+  margin-top: 70px;
+  height: 50px;
+  color: white;
 }
 
-.container-galeria {
-   min-height: 550px;
-    margin: 15px 100px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    column-gap: 10px;
-    
-    
-}
-
-.container-galeria img {
-    height: 200px;
-    width: 250px;
-    border: 1px solid black;
-    margin-bottom: 10px;
-   
-}
-
-.container-galeria2 {
-    display: grid;
-    justify-content: center;
-    grid-template-rows: repeat(3, 150px);
-    grid-template-columns: repeat(3, 200px);
-    margin-bottom: 20px;
-
-}
-
-.container-galeria2 img {
-    height: 100%;
-    width: 100%;
-}
-
-.img-1 {
-    grid-column: 1/3;
-}
-
-.img-2 {
-    grid-row: 2/4;
-}
-
-.img-4 {
-    grid-column: 2/4;
-}
-
-.img-5 {
-    grid-column:2/4;
-}
 .footer-form {
-    background-color: #3a0a99;
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-}
-    
-form {
-    text-align: center;
-    margin-top: 10px;
-    display: flex;
-    justify-content: space-around;
-    gap: 10px
+  background-color: #3a0a99;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
-input {
-    margin: auto;
-}
-
-textarea {
-    margin: auto;
-    
-}
-
-button {
-    background-color: #3a0a99;
-    margin-top: 70px;
-    height: 50px;
-    color: white;
-    
-}
-
-
-
-
+/*# sourceMappingURL=style.css.map */

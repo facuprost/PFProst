@@ -1,0 +1,40 @@
+@mixin form-style {
+    text-align: center;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+       
+}
+
+main {
+    .container-fluid {
+        .formulario {
+            form {
+                @include form-style;
+                gap: 10px; 
+            
+                input {
+                    margin: auto;
+                }
+            
+                label {
+                    margin: auto;
+                }
+            
+                textarea {
+                    margin: auto;
+                }
+                button {
+                    background-color: $color-primary-button;
+                    margin-top: 70px;
+                    height: 50px;
+                    color: $color-secondary-button;
+                }
+            }  
+        }
+    }
+}
+    
+    
+
+    

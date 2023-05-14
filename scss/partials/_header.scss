@@ -1,0 +1,25 @@
+header {
+    .navbar {
+        background-color: $color-primary-nav;
+
+        .container-fluid {
+            .navbar-brand{
+                .logo {
+                    margin: 10px;
+                    height: 40px;
+                    width: 40px;
+                }
+            }
+            .collapse {
+                .navbar-nav {
+                    .nav-item {
+                        .nav-link {
+                            color: $color-secondary-nav;
+                        }
+                    }
+                }
+            }
+        }          
+        
+    }
+}
